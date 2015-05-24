@@ -1,5 +1,5 @@
 ## The functions below, "makeCacheMatrix" and "cacheSolve," calculate the inverse of
-## square, numeric matrix and store the results. These matrix objects can then be
+## a square, numeric matrix and store the results. These matrix objects can then be
 ## retrieved later without repeating calculations. 
 
 ## "makeCacheMatrix" creates a list of functions for a numeric matrix object,
@@ -24,8 +24,8 @@ makeCacheMatrix <- function(x = numeric()) {
 
 
 ## "cacheSolve" returns the inverse of the matrix defined in "makeCacheMatrix" above
-## It first checks to see if the inverse already exists. If so, it returns the cached inverse. 
-## Otherwise, it proceeds to calculate the matrix inverse.
+## It first checks to see if the inverse already exists. If so, it returns the cached value. 
+## Otherwise, it proceeds to calculate the inverse.
 
 cacheSolve <- function(x, ...) {
        i <- x$getinverse()
